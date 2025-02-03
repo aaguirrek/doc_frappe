@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappeframework.com/ -->
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="frappe">
+
+	
+		<meta name="title" content="Server Error"><meta name="language" content="en"><meta property="og:type"  content="article"><meta property="og:title"  content="Server Error"><meta name="twitter:title" content="Server Error"><meta name="twitter:card" content="summary">
+	
+
+	<title>Error</title>
+
+	
+	<link
+		rel="shortcut icon"
+		href="/assets/frappe/images/frappe-favicon.svg"
+		type="image/x-icon"
+	>
+	<script defer data-domain="docs.frappe.io" src="https://analytics.frappe.cloud/js/plausible.js"></script>
+<link type="text/css" rel="stylesheet" href="/assets/frappe/dist/css/website.bundle.6ZK7R7FO.css">
+<link rel="stylesheet" href="/assets/frappe/css/hljs-night-owl.css">
+
+		
+
+	<script>
+		window.frappe = {};
+		window._version_number = "1738059069.0364044";
+		frappe.ready_events = [];
+		frappe.ready = function(fn) {
+			frappe.ready_events.push(fn);
+		}
+		window.dev_server = 0;
+		window.socketio_port = 9000;
+		window.show_language_picker = false;
+	</script>
+</head>
+<body frappe-session-status="logged-out" data-path="error" class="">
+
+		
+
+
+
+
+
+
+
+
+<div id="page-error" data-path="erpnext/user/manual/en/strongsales-invoice-without-an-item-strong">
+	
+<div class="page-content-wrapper">
+	<!-- breadcrumbs -->
+	<div class="page-breadcrumbs">
+		
+			
+		
+	</div>
+
+	
+	<main class="container">
+		<div class="page-header-wrapper">
+			<div class="page-header">
+				
+			</div>
+
+			
+		</div>
+
+		<div class="page_content">
+<style>
+	body {
+		background-color: var(--subtle-accent);
+		font-size: var(--text-base);
+	}
+
+	.error-content {
+		text-align: left;
+		margin-top: var(--margin-md);
+		border-radius: 8px;
+		background-color: #f5f7fa;
+		max-height: 400px;
+		overflow: auto;
+	}
+
+	code::-webkit-scrollbar {
+		display: none;
+	}
+</style>
+
+<div class="error-page">
+	<div>
+		<h4>
+			Server Error
+		</h4>
+		<div class="details">
+			<p>417: There was an error building this page</p>
+
+			<button class="btn btn-xs btn-secondary text-muted small view-error" >
+				Show Error
+			</button>
+
+			<div class="error-content hidden">
+				<pre><code>Traceback (most recent call last):
+  File "apps/frappe/frappe/website/serve.py", line 20, in get_response
+    response = renderer_instance.render()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "apps/wiki/wiki/wiki/doctype/wiki_page/wiki_renderer.py", line 33, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/website/utils.py", line 535, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/website/page_renderers/document_page.py", line 50, in get_html
+    self.update_context()
+  File "apps/frappe/frappe/website/page_renderers/document_page.py", line 65, in update_context
+    ret = self.doc.get_context(self.context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "apps/wiki/wiki/wiki/doctype/wiki_page/wiki_page.py", line 225, in get_context
+    context.wiki_search_scope = self.get_space_route()
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "apps/wiki/wiki/wiki/doctype/wiki_page/wiki_page.py", line 180, in get_space_route
+    frappe.throw("Wiki Page doesn't have a Wiki Space associated with it. Please add them via Desk.")
+  File "apps/frappe/frappe/__init__.py", line 610, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 571, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 522, in _raise_exception
+    raise exc
+frappe.exceptions.ValidationError: Wiki Page doesn't have a Wiki Space associated with it. Please add them via Desk.
+</code></pre>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</div>
+
+		<div class="page-footer"></div>
+	</main>
+	
+</div>
+
+</div>
+
+
+<div id="all-symbols" style="display:none"></div><script type="text/javascript">fetch(`/assets/frappe/icons/timeless/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script><script type="text/javascript">fetch(`/assets/frappe/icons/espresso/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script>
+	<!-- js should be loaded in body! -->
+	<script>
+		frappe.boot = {
+ "apps_data": {
+  "apps": [],
+  "default_path": "",
+  "is_desk_apps": 1
+ },
+ "assets_json": {
+  "billing.bundle.js": "/assets/frappe/dist/js/billing.bundle.2GECBGAK.js",
+  "bootstrap-4-web.bundle.js": "/assets/frappe/dist/js/bootstrap-4-web.bundle.FOZOVELL.js",
+  "build_events.bundle.js": "/assets/frappe/dist/js/build_events.bundle.BCX32TWL.js",
+  "calendar.bundle.js": "/assets/frappe/dist/js/calendar.bundle.4A4YITIU.js",
+  "contributions.bundle.css": "/assets/wiki/dist/css/contributions.bundle.GX4E3GQM.css",
+  "controls.bundle.js": "/assets/frappe/dist/js/controls.bundle.2Q2V2ZEQ.js",
+  "data_import_tools.bundle.js": "/assets/frappe/dist/js/data_import_tools.bundle.RI2ELQ2X.js",
+  "desk.bundle.css": "/assets/frappe/dist/css/desk.bundle.OE5OJHGB.css",
+  "desk.bundle.js": "/assets/frappe/dist/js/desk.bundle.TLAXBE5N.js",
+  "dialog.bundle.js": "/assets/frappe/dist/js/dialog.bundle.CSE47J4X.js",
+  "edit_wiki.bundle.css": "/assets/wiki/dist/css/edit_wiki.bundle.SHWDUSHK.css",
+  "email.bundle.css": "/assets/frappe/dist/css/email.bundle.2BNGWZKQ.css",
+  "file_uploader.bundle.js": "/assets/frappe/dist/js/file_uploader.bundle.QQ4TBKF5.js",
+  "form.bundle.js": "/assets/frappe/dist/js/form.bundle.KTLYDPHO.js",
+  "form_builder.bundle.js": "/assets/frappe/dist/js/form_builder.bundle.NRPX4YQU.js",
+  "frappe-web.bundle.js": "/assets/frappe/dist/js/frappe-web.bundle.KQZXVUSK.js",
+  "kanban_board.bundle.js": "/assets/frappe/dist/js/kanban_board.bundle.7VUNYA4J.js",
+  "libs.bundle.js": "/assets/frappe/dist/js/libs.bundle.TIV7ZGVY.js",
+  "list.bundle.js": "/assets/frappe/dist/js/list.bundle.RLNDTTJS.js",
+  "login.bundle.css": "/assets/frappe/dist/css/login.bundle.HOSCAVZ7.css",
+  "logtypes.bundle.js": "/assets/frappe/dist/js/logtypes.bundle.5KO3ZOOI.js",
+  "onboarding_tours.bundle.js": "/assets/frappe/dist/js/onboarding_tours.bundle.RAUR6X4Z.js",
+  "photoswipe.bundle.js": "/assets/frappe/dist/js/photoswipe.bundle.YSXZQA64.js",
+  "print.bundle.css": "/assets/frappe/dist/css/print.bundle.4RLISWCK.css",
+  "print_format.bundle.css": "/assets/frappe/dist/css/print_format.bundle.H5LHIWKH.css",
+  "print_format_builder.bundle.js": "/assets/frappe/dist/js/print_format_builder.bundle.VQYWNAGA.js",
+  "report.bundle.css": "/assets/frappe/dist/css/report.bundle.RX2MSZQR.css",
+  "report.bundle.js": "/assets/frappe/dist/js/report.bundle.JS7AFESX.js",
+  "rtl_contributions.bundle.css": "/assets/wiki/dist/css-rtl/contributions.bundle.3Z3PC3LH.css",
+  "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.RCZQGVJK.css",
+  "rtl_edit_wiki.bundle.css": "/assets/wiki/dist/css-rtl/edit_wiki.bundle.F7QEP75M.css",
+  "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.7GDFGOBJ.css",
+  "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.GYKWWDVC.css",
+  "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.IO2IBZLP.css",
+  "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.YY5PN6VL.css",
+  "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.LAZH7XAS.css",
+  "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.5VEJQV6X.css",
+  "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.HSR3PGD3.css",
+  "rtl_wiki.bundle.css": "/assets/wiki/dist/css-rtl/wiki.bundle.WOK64DPN.css",
+  "sentry.bundle.js": "/assets/frappe/dist/js/sentry.bundle.AX44GVWW.js",
+  "telemetry.bundle.js": "/assets/frappe/dist/js/telemetry.bundle.LKEZCADB.js",
+  "user_profile_controller.bundle.js": "/assets/frappe/dist/js/user_profile_controller.bundle.TPZWXYWN.js",
+  "video_player.bundle.js": "/assets/frappe/dist/js/video_player.bundle.DUYYLSFO.js",
+  "web_form.bundle.css": "/assets/frappe/dist/css/web_form.bundle.CUQDZWF2.css",
+  "web_form.bundle.js": "/assets/frappe/dist/js/web_form.bundle.OBQJ5XYX.js",
+  "website.bundle.css": "/assets/frappe/dist/css/website.bundle.6ZK7R7FO.css",
+  "wiki.bundle.css": "/assets/wiki/dist/css/wiki.bundle.VTM2KSGK.css",
+  "wiki.bundle.js": "/assets/wiki/dist/js/wiki.bundle.6IZWMHWD.js",
+  "workflow_builder.bundle.js": "/assets/frappe/dist/js/workflow_builder.bundle.MPAFFZ3D.js"
+ },
+ "lang": "en",
+ "sitename": "frappedocs.frappe.cloud",
+ "sysdefaults": {
+  "currency": "INR",
+  "date_format": "dd-mm-yyyy",
+  "first_day_of_the_week": "Sunday",
+  "float_precision": 3,
+  "number_format": "#,##,###.##",
+  "time_format": "HH:mm:ss"
+ },
+ "time_zone": {
+  "system": "Asia/Kolkata",
+  "user": "Asia/Kolkata"
+ }
+}
+		// for backward compatibility of some libs
+		frappe.sys_defaults = frappe.boot.sysdefaults;
+	</script>
+	<script type="text/javascript" src="/assets/frappe/dist/js/frappe-web.bundle.KQZXVUSK.js"></script>
+	
+	<script type="text/javascript" src="/website_script.js"></script>
+<script>
+	let toggle_button = $(".view-error");
+	let error_log = $(".error-content");
+
+	toggle_button.on('click', () => {
+		if (error_log.hasClass("hidden")) {
+			toggle_button.html(`Hide Error`);
+			error_log.removeClass("hidden");
+		} else {
+			toggle_button.html(`Show Error`);
+			error_log.addClass("hidden");
+		}
+	})
+</script>
+
+	<script>frappe.csrf_token = "None";</script></body>
+</html>
